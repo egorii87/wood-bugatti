@@ -1,0 +1,30 @@
+.description {
+  padding: 100px 60px 80px;
+  background-color: #10100e;
+  color: white;
+}
+
+.description-paragraphs {
+  display: flex;
+}
+
+.paragraphs-item {
+  padding-top: 40px;
+  max-width: 500px;
+}
+
+.img-logo {
+  position: absolute;
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
+  width: 160px;
+  height: 160px;
+  margin: 0 auto;
+  border: 2px solid #fff;
+  border-radius: 100px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #fff;
+}

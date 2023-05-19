@@ -1,0 +1,124 @@
+.wood-map {
+  line-height: 0;
+}
+
+.wood-map-img {
+  position: relative;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+.wood-map-img img {
+  height: 130%;
+}
+
+.circle {
+  position: absolute;
+  background: white;
+  z-index: 1;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  margin: 11% 0 0 53%;
+  animation: pulsing 2s infinite;
+}
+
+.qq{
+  position: absolute;
+  z-index: 1;
+}
+
+.li-item {
+  position: absolute;
+  z-index: 1;
+  height: 80px;
+}
+
+.first-li {
+  left: 50%;
+  padding-top: 20px;
+  
+}
+
+
+/* .circle:hover {
+  cursor: pointer;
+  animation-play-state: paused;
+}
+
+
+.dropdown:hover{
+  display: block;
+  color: wheat;
+  z-index: 1;
+}
+
+.tooltip {
+  position: absolute;
+  top: 40px;
+  left: 50%;
+  width: max-content;
+  max-width: 230px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 5px;
+  visibility: hidden;
+  padding: 20px 30px;
+  z-index: 1;
+  border-radius: 3px;
+  opacity: 0;
+  transform: translate(-50%);
+}
+.tooltip::before {
+  content: '';
+  position: absolute;
+  top: -7px;
+  padding: 8px;
+  z-index: 1;
+  border-radius: 2px;
+  transform: rotate(45deg);
+}
+.tooltip.dark .title, .tooltip.colored .title, .tooltip.dark .description, .tooltip.colored .description {
+  cursor: pointer;
+}
+.tooltip.dark {
+  background-color: black;
+}
+.tooltip.dark::before {
+  background-color: black;
+}
+.tooltip.colored {
+  background-color: purple;
+  box-shadow: 0px 9px 24px gray;
+}
+.tooltip.colored::before {
+  background-color: purple;
+}
+.tooltip.outline, .tooltip.white {
+  background-color: white;
+}
+.tooltip.outline::before, .tooltip.white::before {
+  background-color: white;
+}
+.tooltip.white {
+  box-shadow: 0px 9px 24px gray;
+}
+.tooltip.outline {
+  box-shadow: 0px 2px 4px black;
+  border: 1px solid gray;
+}
+.tooltip.outline::before {
+  border: 1px solid gray;
+}
+.tooltip.outline::after {
+  content: '';
+  position: absolute;
+  top: 0px;
+  padding: 8px 14px;
+  z-index: 1;
+  background-color: white;
+} */
+
+
+

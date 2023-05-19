@@ -1,0 +1,19 @@
+.footer-сontact-information {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 25px;
+}
+
+.contact-item {
+  text-align: center;
+  max-width: 300px;
+  padding: 0 25px;
+}
+
+.contact-item img {
+  margin: 0 95px 30px;
+}
+
+.contact-item h3 {
+  padding-bottom: 20px;
+}
