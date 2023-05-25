@@ -1,124 +1,150 @@
-.wood-map {
-  line-height: 0;
-}
-
 .wood-map-img {
   position: relative;
-  text-align: center;
   background-color: #ffffff;
 }
 
 .wood-map-img img {
-  height: 130%;
+  width: 100%;
 }
 
-.circle {
-  position: absolute;
-  background: white;
-  z-index: 1;
-  height: 30px;
+.pulse-button {
+  position: relative;
   width: 30px;
+  height: 30px;
   border-radius: 50%;
-  margin: 11% 0 0 53%;
-  animation: pulsing 2s infinite;
+  border: 0;
+  background: white;
+  cursor: pointer;
 }
-
-.qq{
-  position: absolute;
-  z-index: 1;
-}
-
-.li-item {
-  position: absolute;
-  z-index: 1;
-  height: 80px;
-}
-
-.first-li {
-  left: 50%;
-  padding-top: 20px;
   
-}
-
-
-/* .circle:hover {
-  cursor: pointer;
-  animation-play-state: paused;
-}
-
-
-.dropdown:hover{
-  display: block;
-  color: wheat;
-  z-index: 1;
-}
-
-.tooltip {
+.pulse-button__rings {
+  border: 1px solid white;
   position: absolute;
-  top: 40px;
-  left: 50%;
-  width: max-content;
-  max-width: 230px;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  border-radius: 50%;
+  animation-duration: 1.0s;
+  animation-name: pulse_1;
+  animation-iteration-count: infinite;
+  z-index: -1;
+  cursor: pointer;
+}
+   
+.pulse-button__rings:nth-child(2) {
+  animation-name: pulse_2;
+}
+   
+.pulse-button__rings:nth-child(3) {
+  animation-name: pulse_3;
+}
+  
+@keyframes pulse_1 {
+  from {
+    opacity: 1;
+    transform: scale(0.9, 0.9);
+  }
+   
+  to {
+    opacity: 0;
+    transform: scale(1.3, 1.3);
+  }
+}
+   
+@keyframes pulse_2 {
+  from {
+    opacity: 1;
+    transform: scale(0.8, 0.8);
+  }
+  
+  to {
+    opacity: 0;
+    transform: scale(1.5, 1.5);
+  }
+}
+   
+@keyframes pulse_3 {
+  from {
+    opacity: 1;
+    transform: scale(0.8, 0.8);
+  }
+   
+  to {
+    opacity: 0;
+    transform: scale(1.7, 1.7);
+  }
+}
+  
+.dropdown {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  row-gap: 5px;
-  visibility: hidden;
-  padding: 20px 30px;
-  z-index: 1;
-  border-radius: 3px;
-  opacity: 0;
-  transform: translate(-50%);
-}
-.tooltip::before {
-  content: '';
+  align-content: center;
   position: absolute;
-  top: -7px;
+  z-index: 1;
+   
+}
+
+.first-drop { 
+  left: 48%;
+  transform: translateY(150%);  
+}
+
+.second-drop {
+  left: 30%;
+  top: 190%;
+}
+
+.third-drop {
+  left: 50%;
+  top: 260%;
+}
+
+.fourth-drop {
+  left: 30%;
+  top: 310%;
+}
+  
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 200px;
+  z-index: 1;
+  padding: 0 50px;
+  animation: dropdown 0.6s forwards;
+}
+
+@keyframes dropdown {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+.dropdown-content > a { 
+  display: block;
+  color: white;
   padding: 8px;
-  z-index: 1;
-  border-radius: 2px;
-  transform: rotate(45deg);
+  text-decoration: none;
+  font-size: 18px;
 }
-.tooltip.dark .title, .tooltip.colored .title, .tooltip.dark .description, .tooltip.colored .description {
-  cursor: pointer;
-}
-.tooltip.dark {
-  background-color: black;
-}
-.tooltip.dark::before {
-  background-color: black;
-}
-.tooltip.colored {
-  background-color: purple;
-  box-shadow: 0px 9px 24px gray;
-}
-.tooltip.colored::before {
-  background-color: purple;
-}
-.tooltip.outline, .tooltip.white {
-  background-color: white;
-}
-.tooltip.outline::before, .tooltip.white::before {
-  background-color: white;
-}
-.tooltip.white {
-  box-shadow: 0px 9px 24px gray;
-}
-.tooltip.outline {
-  box-shadow: 0px 2px 4px black;
-  border: 1px solid gray;
-}
-.tooltip.outline::before {
-  border: 1px solid gray;
-}
-.tooltip.outline::after {
-  content: '';
-  position: absolute;
-  top: 0px;
-  padding: 8px 14px;
-  z-index: 1;
-  background-color: white;
-} */
 
+.dropdown-content > h3 { 
+  display: block;
+  color: white;
+  padding: 8px;
+  text-decoration: none;
+  font-size: 22px;
+  min-width: 200px;
+}
+  
+.dropdown-content a:hover {
+  text-decoration: underline;
+}
+  
+.dropdown:hover .dropdown-content {
+  display: block; 
+  margin-right: 50px;
+}
 
-
+.second-drop:hover .dropdown-content {
+  display: block; 
+  margin-right: -150px;
+}
