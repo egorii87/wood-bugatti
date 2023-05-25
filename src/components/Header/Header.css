@@ -9,14 +9,14 @@ ul {
   align-items: center;
 }
 
-a {
+.header-item {
 	text-decoration: none;
 	color: #000;
 	position: relative;
   font-size: 18px;
 }
 
-a:after {
+.header-item:after {
 	content: '';
 	width: 0px;
 	height: 2px;
@@ -27,7 +27,7 @@ a:after {
 	transition: .5s;
 }
 
-ul li:hover a:after {
+ul > li:hover > .header-item:after {
 	width: 100%;
 	transform: translationX(100%);
 }
