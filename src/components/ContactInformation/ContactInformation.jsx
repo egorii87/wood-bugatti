@@ -5,7 +5,7 @@ import compas from '../../assets/images/compas_icon.svg'
 
 export const ContactInformation = () => {
   return (
-    <div className="footer-сontact-information">
+    <div className="footer-сontact-information" id="contacts">
       <div className="contact-item">
         <img src={phone} alt="phone-icon" />
         <h3>Контакты</h3>
