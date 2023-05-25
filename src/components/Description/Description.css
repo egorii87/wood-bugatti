@@ -14,6 +14,10 @@
 }
 
 .img-logo {
+  min-height: 100px;
+}
+
+.img-logo-item {
   position: absolute;
   left: 0;
   right: 0;
