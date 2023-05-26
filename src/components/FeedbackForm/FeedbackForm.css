@@ -61,3 +61,13 @@
   font-weight: 300;
   color: #000000;
 }
+
+@media screen and (max-width: 768px) { 
+
+  .contact-form input[type="text"],
+  .contact-form textarea {
+    width: 85%;
+    height: 36px;
+  }
+
+}
