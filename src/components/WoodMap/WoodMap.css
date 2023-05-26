@@ -173,18 +173,23 @@
   }
 
   .first-drop {
-    left: 30%;
+    left: 28%;
     top: 8%;
   }
 
   .second-drop {
-    left: 42%;
-    top: 30%;
+    left: 38%;
+    top: 40%;
+  }
+
+  .third-drop {
+    left: 30%;
+    top: 75%;
   }
 
   .fourth-drop {
-    left: 20%;
-    top: 60%;
+    left: 32%;
+    top: 50%;
   }
 
 }
