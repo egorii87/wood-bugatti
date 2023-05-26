@@ -10,28 +10,45 @@ ul {
 }
 
 .header-item {
-	text-decoration: none;
-	color: #000;
-	position: relative;
-  font-size: 18px;
+  text-decoration: none;
+  color: #000;
+  position: relative;
+  font-size: 24px;
 }
 
 .header-item:after {
-	content: '';
-	width: 0px;
-	height: 2px;
-	background: #000000;
-	position: absolute;
-	top: 100%;
-	left: 0;
-	transition: .5s;
+  content: '';
+  width: 0px;
+  height: 2px;
+  background: #000000;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  transition: 0.5s;
 }
 
 ul > li:hover > .header-item:after {
-	width: 100%;
-	transform: translationX(100%);
+  width: 100%;
+  transform: translationX(100%);
 }
 
 .logo {
   height: 50px;
+}
+
+@media screen and (max-width: 768px) {
+
+
+  .pulse-button {
+    width: 20px;
+    height: 20px;
+  }
+
+  .header-item {
+    font-size: 16px;
+  }
+
+  .container {
+    padding: 10px 15px;
+  }
 }

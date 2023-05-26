@@ -7,3 +7,11 @@
   width: 100%;
   height: 100vh;
 }
+
+@media screen and (max-width: 768px) {
+
+  .img-item {
+    height: 70vh;
+  }
+  
+}
