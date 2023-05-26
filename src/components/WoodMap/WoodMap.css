@@ -6,20 +6,22 @@
   position: relative;
   background-color: #ffffff;
   height: 100%;
+  text-align: center;
 }
 
 .wood-map-img img {
-  width: 100%;
+  width: 40%;
 }
 
 .pulse-button {
   position: absolute;
-  width: 30px;
-  height: 30px;
+  width: 25px;
+  height: 25px;
   border-radius: 50%;
   border: 0;
   background: white;
   cursor: pointer;
+  z-index: 2;
 }
 
 .pulse-button__rings {
@@ -33,7 +35,7 @@
   animation-duration: 1s;
   animation-name: pulse_1;
   animation-iteration-count: infinite;
-  z-index: -1;
+  z-index: -2;
   cursor: pointer;
 }
 
@@ -89,23 +91,23 @@
 }
 
 .first-drop {
-  left: 48%;
-  top: 13%;
+  left: 51%;
+  top: 5%;
 }
 
 .second-drop {
-  left: 30%;
+  left: 40%;
   top: 30%;
 }
 
 .third-drop {
-  left: 50%;
+  left: 55%;
   top: 55%;
 }
 
 .fourth-drop {
-  left: 30%;
-  top: 70%;
+  left: 38%;
+  top: 65%;
 }
 
 .dropdown-content {
@@ -113,8 +115,8 @@
   position: absolute;
   min-width: 200px;
   z-index: 1;
-  padding: 0 50px;
   animation: dropdown 0.6s forwards;
+  top: -95px;
 }
 
 @keyframes dropdown {
@@ -126,29 +128,83 @@
   }
 }
 
-.dropdown-content > a {
+.dropdown-list > a {
   display: block;
-  color: white;
+  color: black;
   padding: 8px;
   text-decoration: none;
   font-size: 18px;
 }
 
-.dropdown-content > h3 {
+.dropdown-list > h3 {
   display: block;
-  color: white;
+  color: black;
   padding: 8px;
   text-decoration: none;
   font-size: 22px;
   min-width: 200px;
 }
 
-.dropdown-content a:hover {
+.dropdown-list a:hover {
   text-decoration: underline;
 }
 
 .dropdown:hover .dropdown-content {
   display: block;
+}
+
+.right-drop {
+  position: relative;
+  left: 85px;
+  padding: 0 50px;
+}
+
+.left-drop {
+  position: relative;
+  left: -250px;
+  padding-right: 250px;
+}
+
+.right-angle {
+  position: relative;
+  top: -25px;
+}
+
+.left-angle {
+  position: relative;
+  top: -25px;
+}
+
+.ray {
+  position: absolute;
+  height: 3px;
+  background-color: black;
+}
+
+.right-ray:first-child {
+  width: 100px;
+  transform: rotate(135deg);
+  top: 95.5px;
+  left: 0;
+}
+
+.right-ray:last-child {
+  width: 200px;
+  top: 61.2px;
+  left: 84px;
+}
+
+.left-ray:first-child {
+  width: 100px;
+  transform: rotate(45deg);
+  top: 95.5px;
+  left: -75px;
+}
+
+.left-ray:last-child {
+  width: 200px;
+  top: 61.2px;
+  left: -260px;
 }
 
 @media screen and (max-width: 768px) {
@@ -174,7 +230,7 @@
 
   .first-drop {
     left: 28%;
-    top: 8%;
+    top: 5%;
   }
 
   .second-drop {
